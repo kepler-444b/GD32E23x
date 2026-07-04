@@ -1,6 +1,0 @@
-r
-halt
-loadfile "d:\code\GD32E23x\Template\Keil_project\build\GD32E23x\GD32E23x.hex"
-r
-go
-exit
