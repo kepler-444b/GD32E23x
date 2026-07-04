@@ -1,0 +1,223 @@
+version: "4.1"
+name: GD32E23x
+type: ARM
+deviceName: null
+packDir: null
+srcDirs: []
+virtualFolder:
+  name: <virtual_root>
+  files: []
+  folders:
+    - name: Application
+      files:
+        - path: ../gd32e23x_it.c
+        - path: ../main.c
+        - path: ../systick.c
+      folders: []
+    - name: CMSIS
+      files:
+        - path: ../../Firmware/CMSIS/GD/GD32E23x/Source/system_gd32e23x.c
+      folders: []
+    - name: Peripherals
+      files:
+        - path: ../../Firmware/GD32E23x_standard_peripheral/Source/gd32e23x_adc.c
+        - path: ../../Firmware/GD32E23x_standard_peripheral/Source/gd32e23x_cmp.c
+        - path: ../../Firmware/GD32E23x_standard_peripheral/Source/gd32e23x_crc.c
+        - path: ../../Firmware/GD32E23x_standard_peripheral/Source/gd32e23x_dbg.c
+        - path: ../../Firmware/GD32E23x_standard_peripheral/Source/gd32e23x_dma.c
+        - path: ../../Firmware/GD32E23x_standard_peripheral/Source/gd32e23x_exti.c
+        - path: ../../Firmware/GD32E23x_standard_peripheral/Source/gd32e23x_fmc.c
+        - path: ../../Firmware/GD32E23x_standard_peripheral/Source/gd32e23x_fwdgt.c
+        - path: ../../Firmware/GD32E23x_standard_peripheral/Source/gd32e23x_gpio.c
+        - path: ../../Firmware/GD32E23x_standard_peripheral/Source/gd32e23x_i2c.c
+        - path: ../../Firmware/GD32E23x_standard_peripheral/Source/gd32e23x_misc.c
+        - path: ../../Firmware/GD32E23x_standard_peripheral/Source/gd32e23x_pmu.c
+        - path: ../../Firmware/GD32E23x_standard_peripheral/Source/gd32e23x_rcu.c
+        - path: ../../Firmware/GD32E23x_standard_peripheral/Source/gd32e23x_rtc.c
+        - path: ../../Firmware/GD32E23x_standard_peripheral/Source/gd32e23x_spi.c
+        - path: ../../Firmware/GD32E23x_standard_peripheral/Source/gd32e23x_syscfg.c
+        - path: ../../Firmware/GD32E23x_standard_peripheral/Source/gd32e23x_timer.c
+        - path: ../../Firmware/GD32E23x_standard_peripheral/Source/gd32e23x_usart.c
+        - path: ../../Firmware/GD32E23x_standard_peripheral/Source/gd32e23x_wwdgt.c
+      folders: []
+    - name: Startup
+      files:
+        - path: ../../Firmware/CMSIS/GD/GD32E23x/Source/ARM/startup_gd32e23x.s
+      folders: []
+    - name: Utilities
+      files:
+        - path: ../../Utilities/gd32e230c_eval.c
+      folders: []
+    - name: Doc
+      files:
+        - path: ../readme.txt
+      folders: []
+    - name: Device
+      files:
+        - path: ../../Source/device/device.c
+        - path: ../../Source/device/device.h
+        - path: ../../Source/device/devicemanager.h
+        - path: ../../Source/device/triac_driver/triac_driver.c
+        - path: ../../Source/device/triac_driver/triac_driver.h
+      folders: []
+    - name: Common
+      files:
+        - path: ../../Source/gpio/gpio.c
+        - path: ../../Source/gpio/gpio.h
+        - path: ../../Source/eventbus/eventbus.c
+        - path: ../../Source/eventbus/eventbus.h
+        - path: ../../Source/flash/flash.c
+        - path: ../../Source/flash/flash.h
+        - path: ../../Source/watchdog/watchdog.c
+        - path: ../../Source/watchdog/watchdog.h
+        - path: ../../Source/zero/zero.c
+        - path: ../../Source/zero/zero.h
+        - path: ../../Source/timer/timer.c
+        - path: ../../Source/timer/timer.h
+        - path: ../../Source/usart/usart.c
+        - path: ../../Source/usart/usart.h
+        - path: ../../Source/protocol/protocol.c
+        - path: ../../Source/protocol/protocol.h
+        - path: ../../Source/pcb/pcb.c
+        - path: ../../Source/pcb/pcb.h
+      folders: []
+    - name: ::CMSIS
+      files: []
+      folders: []
+dependenceList: []
+outDir: build
+miscInfo:
+  uid: 8b6b25398abe9cc17bfc18078805d8de
+targets:
+  GD32E23x:
+    cppPreprocessAttrs:
+      defineList:
+        - GD32E235
+      incList:
+        - ../../Firmware/CMSIS
+        - ../../Utilities
+        - ..
+        - ../../Firmware/GD32E23x_standard_peripheral/Include
+        - ../../Firmware/CMSIS/GD/GD32E23x/Include
+        - ../../Source/timer
+        - .cmsis/include
+        - RTE/_GD32E23x
+      libList: []
+    excludeList: []
+    settings:
+      debugger: cortex-debug
+    toolchain: AC6
+    toolchainConfigMap:
+      AC6:
+        archExtensions: ""
+        cpuType: Cortex-M23
+        floatingPointHardware: none
+        options:
+          version: 3
+          afterBuildTasks: []
+          asm-compiler:
+            $use: asm-auto
+          beforeBuildTasks: []
+          c/cpp-compiler:
+            language-c: c99
+            language-cpp: c++11
+            one-elf-section-per-function: true
+            optimization: level-2
+            short-enums#wchar: true
+            warnings: ac5-like-warnings
+          global:
+            output-debug-info: enable
+            use-microLIB: true
+          linker:
+            $outputTaskExcludes:
+              - .bin
+            misc-controls: --diag_suppress=L6329
+            output-format: elf
+            ro-base: "0x08000000"
+            rw-base: "0x20000000"
+        scatterFilePath: output/Project.sct
+        storageLayout:
+          RAM:
+            - id: 1
+              isChecked: false
+              mem:
+                size: "0x0"
+                startAddr: "0x0"
+              noInit: false
+              tag: RAM
+            - id: 2
+              isChecked: false
+              mem:
+                size: "0x0"
+                startAddr: "0x0"
+              noInit: false
+              tag: RAM
+            - id: 3
+              isChecked: false
+              mem:
+                size: "0x0"
+                startAddr: "0x0"
+              noInit: false
+              tag: RAM
+            - id: 1
+              isChecked: true
+              mem:
+                size: "0x4000"
+                startAddr: "0x20000000"
+              noInit: false
+              tag: IRAM
+            - id: 2
+              isChecked: false
+              mem:
+                size: "0x0"
+                startAddr: "0x0"
+              noInit: false
+              tag: IRAM
+          ROM:
+            - id: 1
+              isChecked: false
+              isStartup: false
+              mem:
+                size: "0x0"
+                startAddr: "0x0"
+              tag: ROM
+            - id: 2
+              isChecked: false
+              isStartup: false
+              mem:
+                size: "0x0"
+                startAddr: "0x0"
+              tag: ROM
+            - id: 3
+              isChecked: false
+              isStartup: false
+              mem:
+                size: "0x0"
+                startAddr: "0x0"
+              tag: ROM
+            - id: 1
+              isChecked: true
+              isStartup: true
+              mem:
+                size: "0x20000"
+                startAddr: "0x8000000"
+              tag: IROM
+            - id: 2
+              isChecked: false
+              isStartup: false
+              mem:
+                size: "0x0"
+                startAddr: "0x0"
+              tag: IROM
+        useCustomScatterFile: false
+    uploadConfigMap:
+      JLink:
+        baseAddr: ""
+        bin: ""
+        cpuInfo:
+          cpuName: GD32E235CBT6
+          vendor: GigaDevice
+        otherCmds: ""
+        proType: 1
+        speed: 8000
+    uploader: JLink

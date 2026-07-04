@@ -1,0 +1,375 @@
+[2026-07-02 17:39:32]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\code\GD32E23x\Source\device\triac_driver\triac_driver.c': source file has been changed.
+
+[2026-07-02 17:39:32]	compilation failed at : "d:\code\GD32E23x\Source\device\triac_driver\triac_driver.c", exit code: 1
+command: 
+  "D:\keil\keil_v5\ARM\ARMCLANG\bin\armclang.exe" --target=arm-arm-none-eabi -c -xc -std=c99 -I../../Firmware/CMSIS -I../../Utilities -I.. -I../../Firmware/GD32E23x_standard_peripheral/Include -I../../Firmware/CMSIS/GD/GD32E23x/Include -I../../Source/timer -I.cmsis/include -IRTE/_GD32E23x -D"GD32E235" -mcpu=cortex-m23 -mlittle-endian -D__MICROLIB -O2 -ffunction-sections -funsigned-char -fshort-enums -fshort-wchar -fno-rtti -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -g -o ./build/GD32E23x/.obj/__/__/Source/device/triac_driver/triac_driver.o -MMD ./../../Source/device/triac_driver/triac_driver.c
+   at unify_builder.Program.Main(String[] args_)
+---
+./../../Source/device/triac_driver/triac_driver.c:44:29: error: no member named 'level' in 'triac_status_t'
+   44 |             my_triac_status.level ^= 1; // 翻转
+      |             ~~~~~~~~~~~~~~~ ^
+./../../Source/device/triac_driver/triac_driver.c:45:47: error: no member named 'level' in 'triac_status_t'
+   45 |             APP_SET_GPIO(PB7, my_triac_status.level);
+      |                               ~~~~~~~~~~~~~~~ ^
+../../Utilities\../Source/gpio/gpio.h:11:7: note: expanded from macro 'APP_SET_GPIO'
+   11 |     ((status) ? (GPIO_BOP((obj).port) = (uint32_t)(obj).pin) : (GPIO_BC((obj).port) = (uint32_t)(obj).pin))
+      |       ^~~~~~
+2 errors generated.
+
+[2026-07-02 17:39:43]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\code\GD32E23x\Source\device\triac_driver\triac_driver.c': object (.o) file not exist
+
+[2026-07-02 17:39:43]	[done]
+	build successfully !
+
+[2026-07-02 17:39:58]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\code\GD32E23x\Source\device\triac_driver\triac_driver.c': source file has been changed.
+
+[2026-07-02 17:39:59]	[done]
+	build successfully !
+
+[2026-07-04 10:02:55]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\code\GD32E23x\Source\device\triac_driver\triac_driver.c': source file has been changed.
+
+[2026-07-04 10:02:57]	[done]
+	build successfully !
+
+[2026-07-04 10:08:45]	[info] incremental build: 2 source files changed
+These source files will be recompiled
+---
+'d:\code\GD32E23x\Source\device\triac_driver\triac_driver.c': source file has been changed.
+'d:\code\GD32E23x\Template\main.c': source file has been changed.
+
+[2026-07-04 10:08:45]	[done]
+	build successfully !
+
+[2026-07-04 10:10:54]	[info] incremental build: 2 source files changed
+These source files will be recompiled
+---
+'d:\code\GD32E23x\Source\device\triac_driver\triac_driver.c': source file has been changed.
+'d:\code\GD32E23x\Source\pcb\pcb.c': source file has been changed.
+
+[2026-07-04 10:10:54]	[done]
+	build successfully !
+
+[2026-07-04 11:05:33]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\code\GD32E23x\Source\pcb\pcb.c': source file has been changed.
+
+[2026-07-04 11:05:33]	[done]
+	build successfully !
+
+[2026-07-04 11:05:46]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\code\GD32E23x\Source\pcb\pcb.c': source file has been changed.
+
+[2026-07-04 11:05:47]	[done]
+	build successfully !
+
+[2026-07-04 11:06:06]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\code\GD32E23x\Source\pcb\pcb.c': source file has been changed.
+
+[2026-07-04 11:06:06]	[done]
+	build successfully !
+
+[2026-07-04 11:06:15]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\code\GD32E23x\Source\pcb\pcb.c': source file has been changed.
+
+[2026-07-04 11:06:16]	[done]
+	build successfully !
+
+[2026-07-04 11:06:31]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\code\GD32E23x\Source\pcb\pcb.c': source file has been changed.
+
+[2026-07-04 11:06:31]	[done]
+	build successfully !
+
+[2026-07-04 11:06:51]	[done]
+	build successfully !
+
+[2026-07-04 11:16:22]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\code\GD32E23x\Source\pcb\pcb.c': source file has been changed.
+
+[2026-07-04 11:16:22]	[done]
+	build successfully !
+
+[2026-07-04 11:17:11]	[info] incremental build: 2 source files changed
+These source files will be recompiled
+---
+'d:\code\GD32E23x\Source\device\triac_driver\triac_driver.c': source file has been changed.
+'d:\code\GD32E23x\Source\pcb\pcb.c': source file has been changed.
+
+[2026-07-04 11:17:11]	link failed !, exit code: 1
+   at unify_builder.Program.Main(String[] args_)
+---
+Error: L6200E: Symbol EXTI4_15_IRQHandler multiply defined (by zero.o and triac_driver.o).
+Not enough information to list image symbols.
+Not enough information to list the image map.
+Finished: 2 information, 0 warning and 1 error messages.
+
+
+[2026-07-04 11:18:56]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\code\GD32E23x\Source\zero\zero.c': source file has been changed.
+
+[2026-07-04 11:18:57]	compilation failed at : "d:\code\GD32E23x\Source\zero\zero.c", exit code: 1
+command: 
+  "D:\keil\keil_v5\ARM\ARMCLANG\bin\armclang.exe" --target=arm-arm-none-eabi -c -xc -std=c99 -I../../Firmware/CMSIS -I../../Utilities -I.. -I../../Firmware/GD32E23x_standard_peripheral/Include -I../../Firmware/CMSIS/GD/GD32E23x/Include -I../../Source/timer -I.cmsis/include -IRTE/_GD32E23x -D"GD32E235" -mcpu=cortex-m23 -mlittle-endian -D__MICROLIB -O2 -ffunction-sections -funsigned-char -fshort-enums -fshort-wchar -fno-rtti -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -g -o ./build/GD32E23x/.obj/__/__/Source/zero/zero.o -MMD ./../../Source/zero/zero.c
+   at unify_builder.Program.Main(String[] args_)
+---
+./../../Source/zero/zero.c:71:9: error: call to undeclared function 'uxQueueMessagesWaiting'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   71 |     if (uxQueueMessagesWaiting(ZeroQueueHandle) == 0) {
+      |         ^
+./../../Source/zero/zero.c:71:32: error: use of undeclared identifier 'ZeroQueueHandle'
+   71 |     if (uxQueueMessagesWaiting(ZeroQueueHandle) == 0) {
+      |                                ^
+./../../Source/zero/zero.c:74:9: error: call to undeclared function 'xQueueReceive'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   74 |     if (xQueueReceive(ZeroQueueHandle, &pending_cmd, 0)) { // 从队列中取命令(非阻塞)
+      |         ^
+./../../Source/zero/zero.c:74:23: error: use of undeclared identifier 'ZeroQueueHandle'
+   74 |     if (xQueueReceive(ZeroQueueHandle, &pending_cmd, 0)) { // 从队列中取命令(非阻塞)
+      |                       ^
+4 errors generated.
+
+[2026-07-04 11:19:59]	[info] incremental build: 2 source files changed
+These source files will be recompiled
+---
+'d:\code\GD32E23x\Source\device\triac_driver\triac_driver.c': source file has been changed.
+'d:\code\GD32E23x\Source\zero\zero.c': object (.o) file not exist
+
+[2026-07-04 11:19:59]	compilation failed at : "d:\code\GD32E23x\Source\zero\zero.c", exit code: 1
+command: 
+  "D:\keil\keil_v5\ARM\ARMCLANG\bin\armclang.exe" --target=arm-arm-none-eabi -c -xc -std=c99 -I../../Firmware/CMSIS -I../../Utilities -I.. -I../../Firmware/GD32E23x_standard_peripheral/Include -I../../Firmware/CMSIS/GD/GD32E23x/Include -I../../Source/timer -I.cmsis/include -IRTE/_GD32E23x -D"GD32E235" -mcpu=cortex-m23 -mlittle-endian -D__MICROLIB -O2 -ffunction-sections -funsigned-char -fshort-enums -fshort-wchar -fno-rtti -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -g -o ./build/GD32E23x/.obj/__/__/Source/zero/zero.o -MMD ./../../Source/zero/zero.c
+   at unify_builder.Program.Main(String[] args_)
+---
+./../../Source/zero/zero.c:14:9: error: call to undeclared function 'APP_PRINTF'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   14 |         APP_PRINTF("1\n");
+      |         ^
+1 error generated.
+
+[2026-07-04 11:20:07]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\code\GD32E23x\Source\zero\zero.c': object (.o) file not exist
+
+[2026-07-04 11:20:07]	[done]
+	build successfully !
+
+[2026-07-04 11:21:00]	[info] incremental build: 2 source files changed
+These source files will be recompiled
+---
+'d:\code\GD32E23x\Source\device\triac_driver\triac_driver.c': source file has been changed.
+'d:\code\GD32E23x\Source\zero\zero.c': source file has been changed.
+
+[2026-07-04 11:21:00]	[done]
+	build successfully !
+
+[2026-07-04 11:21:09]	[info] incremental build: 2 source files changed
+These source files will be recompiled
+---
+'d:\code\GD32E23x\Source\device\triac_driver\triac_driver.c': source file has been changed.
+'d:\code\GD32E23x\Source\pcb\pcb.c': source file has been changed.
+
+[2026-07-04 11:21:09]	[done]
+	build successfully !
+
+[2026-07-04 11:21:33]	[info] incremental build: 2 source files changed
+These source files will be recompiled
+---
+'d:\code\GD32E23x\Source\device\triac_driver\triac_driver.c': source file has been changed.
+'d:\code\GD32E23x\Source\zero\zero.c': source file has been changed.
+
+[2026-07-04 11:21:34]	[done]
+	build successfully !
+
+[2026-07-04 11:21:38]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\code\GD32E23x\Source\device\triac_driver\triac_driver.c': source file has been changed.
+
+[2026-07-04 11:21:38]	[done]
+	build successfully !
+
+[2026-07-04 11:24:32]	[info] incremental build: 2 source files changed
+These source files will be recompiled
+---
+'d:\code\GD32E23x\Source\device\triac_driver\triac_driver.c': source file has been changed.
+'d:\code\GD32E23x\Source\pcb\pcb.c': source file has been changed.
+
+[2026-07-04 11:24:33]	[done]
+	build successfully !
+
+[2026-07-04 11:25:41]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\code\GD32E23x\Source\device\triac_driver\triac_driver.c': source file has been changed.
+
+[2026-07-04 11:25:41]	[done]
+	build successfully !
+
+[2026-07-04 11:27:12]	[info] incremental build: 2 source files changed
+These source files will be recompiled
+---
+'d:\code\GD32E23x\Source\device\triac_driver\triac_driver.c': source file has been changed.
+'d:\code\GD32E23x\Source\pcb\pcb.c': source file has been changed.
+
+[2026-07-04 11:27:12]	[done]
+	build successfully !
+
+[2026-07-04 11:34:41]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\code\GD32E23x\Source\pcb\pcb.c': source file has been changed.
+
+[2026-07-04 11:34:42]	[done]
+	build successfully !
+
+[2026-07-04 13:26:49]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\code\GD32E23x\Source\pcb\pcb.c': source file has been changed.
+
+[2026-07-04 13:26:49]	[done]
+	build successfully !
+
+[2026-07-04 13:30:12]	[done]
+	build successfully !
+
+[2026-07-04 14:42:33]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\code\GD32E23x\Source\pcb\pcb.c': source file has been changed.
+
+[2026-07-04 14:42:35]	[done]
+	build successfully !
+
+[2026-07-04 14:55:50]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\code\GD32E23x\Source\pcb\pcb.c': source file has been changed.
+
+[2026-07-04 14:55:50]	[done]
+	build successfully !
+
+[2026-07-04 14:57:05]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\code\GD32E23x\Source\pcb\pcb.c': source file has been changed.
+
+[2026-07-04 14:57:05]	[done]
+	build successfully !
+
+[2026-07-04 14:57:28]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\code\GD32E23x\Source\pcb\pcb.c': source file has been changed.
+
+[2026-07-04 14:57:28]	[done]
+	build successfully !
+
+[2026-07-04 14:58:41]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\code\GD32E23x\Source\pcb\pcb.c': source file has been changed.
+
+[2026-07-04 14:58:42]	[done]
+	build successfully !
+
+[2026-07-04 15:31:35]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\code\GD32E23x\Source\pcb\pcb.c': source file has been changed.
+
+[2026-07-04 15:31:35]	[done]
+	build successfully !
+
+[2026-07-04 15:42:05]	[info] incremental build: 2 source files changed
+These source files will be recompiled
+---
+'d:\code\GD32E23x\Source\device\triac_driver\triac_driver.c': source file has been changed.
+'d:\code\GD32E23x\Source\pcb\pcb.c': source file has been changed.
+
+[2026-07-04 15:42:05]	[done]
+	build successfully !
+
+[2026-07-04 15:54:16]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\code\GD32E23x\Source\pcb\pcb.c': source file has been changed.
+
+[2026-07-04 15:54:16]	compilation failed at : "d:\code\GD32E23x\Source\pcb\pcb.c", exit code: 1
+command: 
+  "D:\keil\keil_v5\ARM\ARMCLANG\bin\armclang.exe" --target=arm-arm-none-eabi -c -xc -std=c99 -I../../Firmware/CMSIS -I../../Utilities -I.. -I../../Firmware/GD32E23x_standard_peripheral/Include -I../../Firmware/CMSIS/GD/GD32E23x/Include -I../../Source/timer -I.cmsis/include -IRTE/_GD32E23x -D"GD32E235" -mcpu=cortex-m23 -mlittle-endian -D__MICROLIB -O2 -ffunction-sections -funsigned-char -fshort-enums -fshort-wchar -fno-rtti -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -g -o ./build/GD32E23x/.obj/__/__/Source/pcb/pcb.o -MMD ./../../Source/pcb/pcb.c
+   at unify_builder.Program.Main(String[] args_)
+---
+./../../Source/pcb/pcb.c:34:43: error: use of undeclared identifier 'GPIO_PUPD_UP'
+   34 |     gpio_mode_set(GPIOB, GPIO_MODE_INPUT, GPIO_PUPD_UP, GPIO_PIN_12 | GPIO_PIN_13 | GPIO_PIN_14);
+      |                                           ^
+1 error generated.
+
+[2026-07-04 15:54:22]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\code\GD32E23x\Source\pcb\pcb.c': object (.o) file not exist
+
+[2026-07-04 15:54:22]	[done]
+	build successfully !
+
+[2026-07-04 16:30:58]	[info] incremental build: 3 source files changed
+These source files will be recompiled
+---
+'d:\code\GD32E23x\Source\device\device.c': dependence 'd:\code\GD32E23x\Template\Keil_project\..\..\Source\device\triac_driver\triac_driver.h' has been changed.
+'d:\code\GD32E23x\Source\device\triac_driver\triac_driver.c': source file has been changed.
+'d:\code\GD32E23x\Source\protocol\protocol.c': dependence 'd:\code\GD32E23x\Template\Keil_project\..\..\Utilities\..\Source\device\triac_driver\triac_driver.h' has been changed.
+
+[2026-07-04 16:30:59]	[done]
+	build successfully !
+
+[2026-07-04 16:31:29]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\code\GD32E23x\Source\device\triac_driver\triac_driver.c': source file has been changed.
+
+[2026-07-04 16:31:29]	[done]
+	build successfully !
+
+[2026-07-04 17:15:11]	[info] incremental build: 3 source files changed
+These source files will be recompiled
+---
+'d:\code\GD32E23x\Source\device\device.c': dependence 'd:\code\GD32E23x\Template\Keil_project\..\..\Source\device\triac_driver\triac_driver.h' has been changed.
+'d:\code\GD32E23x\Source\device\triac_driver\triac_driver.c': source file has been changed.
+'d:\code\GD32E23x\Source\protocol\protocol.c': dependence 'd:\code\GD32E23x\Template\Keil_project\..\..\Utilities\..\Source\device\triac_driver\triac_driver.h' has been changed.
+
+[2026-07-04 17:15:11]	[done]
+	build successfully !
+
+[2026-07-04 18:00:13]	[info] incremental build: 3 source files changed
+These source files will be recompiled
+---
+'d:\code\GD32E23x\Source\device\device.c': dependence 'd:\code\GD32E23x\Template\Keil_project\..\..\Source\device\triac_driver\triac_driver.h' has been changed.
+'d:\code\GD32E23x\Source\device\triac_driver\triac_driver.c': source file has been changed.
+'d:\code\GD32E23x\Source\protocol\protocol.c': dependence 'd:\code\GD32E23x\Template\Keil_project\..\..\Utilities\..\Source\device\triac_driver\triac_driver.h' has been changed.
+
+[2026-07-04 18:00:13]	[done]
+	build successfully !
+
