@@ -147,7 +147,6 @@ void USART0_IRQHandler(void)
     if (usart_interrupt_flag_get(USART0, USART_INT_FLAG_TC) != RESET) { // 发送完成中断
         usart_flag_clear(USART0, USART_FLAG_TC);
 
-        APP_PRINTF("1\n");
         RD_SET_L; // 发送完成,拉低准备接收
         tx_busy = 0;
         usart_receive_config(USART0, USART_RECEIVE_ENABLE); // 重新启用接收器

@@ -3,7 +3,9 @@
 
 // 事件类型定义(根据需求修改)
 typedef enum {
-    EVENT_USART0_RECV, // 业务串口接收数据
+    EVENT_USART0_RECV, // 业务串口接收通讯协议数据
+    EVENT_SOFT_RECV,   // 业务串口接收上位机数据
+    EVENT_SOFT_SEND,   // 业务串口发送上位机数据
 
     // 添加更多事件类型...
     EVENT_COUNT // 自动计算事件数量

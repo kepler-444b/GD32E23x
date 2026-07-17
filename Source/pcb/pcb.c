@@ -15,10 +15,6 @@ void pcb_init(void)
     // 过零信号
     rcu_periph_clock_enable(RCU_CFGCMP);
     gpio_mode_set(GPIOB, GPIO_MODE_INPUT, GPIO_PUPD_PULLUP, GPIO_PIN_11);
-    syscfg_exti_line_config(EXTI_SOURCE_GPIOB, EXTI_SOURCE_PIN11);
-    exti_init(EXTI_11, EXTI_INTERRUPT, EXTI_TRIG_BOTH);
-    exti_interrupt_flag_clear(EXTI_11);
-    nvic_irq_enable(EXTI4_15_IRQn, 0);
 
     // 数据指示灯
     gpio_mode_set(GPIOB, GPIO_MODE_OUTPUT, GPIO_PUPD_NONE, GPIO_PIN_7);
@@ -32,6 +28,10 @@ void pcb_init(void)
 
     // 拨码
     gpio_mode_set(GPIOB, GPIO_MODE_INPUT, GPIO_PUPD_PULLUP, GPIO_PIN_12 | GPIO_PIN_13 | GPIO_PIN_14);
+
+    // 按键
+    rcu_periph_clock_enable(RCU_GPIOA);
+    gpio_mode_set(GPIOA, GPIO_MODE_INPUT, GPIO_PUPD_PULLUP, GPIO_PIN_0);
 
 #endif
 }

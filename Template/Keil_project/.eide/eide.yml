@@ -59,6 +59,7 @@ virtualFolder:
         - path: ../../Source/device/devicemanager.h
         - path: ../../Source/device/triac_driver/triac_driver.c
         - path: ../../Source/device/triac_driver/triac_driver.h
+        - path: ../../Source/device/triac_driver/triac_lum_table.h
       folders: []
     - name: Common
       files:
